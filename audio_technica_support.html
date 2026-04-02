@@ -119,6 +119,39 @@
   .menu-card-action { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700; color: var(--at-dark); }
   .menu-card-action::after { content: '›'; font-size: 18px; color: var(--at-red); line-height: 1; }
 
+  /* ===== コマンドボタン ===== */
+  .cmd-section { max-width: 1100px; margin: 0 auto 32px; padding: 0 20px; }
+  .cmd-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .cmd-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 12px;
+    background: var(--at-white);
+    border: 1px solid var(--at-border);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--at-dark);
+    text-decoration: none;
+    line-height: 1.4;
+    transition: background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .cmd-btn:hover {
+    background: #fff0f0;
+    border-color: var(--at-red);
+    color: var(--at-red);
+    box-shadow: 0 3px 10px rgba(204,0,0,0.10);
+  }
+  @media (max-width: 900px) { .cmd-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .cmd-grid { grid-template-columns: repeat(2, 1fr); } }
+
   /* 404 */
   .not-found { max-width: 600px; margin: 80px auto; padding: 0 20px; text-align: center; }
   .not-found h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: var(--at-dark); }
@@ -261,9 +294,23 @@
       </a>
     </div>
   </div>
-</div>
 
-<!-- NOT FOUND -->
+  <!-- コマンドボタン一覧 -->
+  <div class="cmd-section">
+    <div class="cmd-grid">
+      <a href="https://www.audio-technica.co.jp/support/repair/" target="_blank" rel="noopener noreferrer" class="cmd-btn">修理申し込み</a>
+      <a href="https://www.audio-technica.co.jp/support/guarantee/" target="_blank" rel="noopener noreferrer" class="cmd-btn">保証規定</a>
+      <a href="https://www.audio-technica.co.jp/support/fit/" target="_blank" rel="noopener noreferrer" class="cmd-btn">適合リスト</a>
+      <a href="https://www.audio-technica.co.jp/support/software/" target="_blank" rel="noopener noreferrer" class="cmd-btn">ソフトウェアのダウンロード／本体のアップデート</a>
+      <a href="https://www.at-globalsupport.com/" target="_blank" rel="noopener noreferrer" class="cmd-btn">Global Support</a>
+      <a href="https://www.audio-technica.co.jp/support/catalog/" target="_blank" rel="noopener noreferrer" class="cmd-btn">カタログダウンロード</a>
+      <a href="https://www.audio-technica.co.jp/support/storelist/" target="_blank" rel="noopener noreferrer" class="cmd-btn">正規販売店一覧</a>
+      <a href="https://support.audio-technica.co.jp/faq/show/3859?site_domain=default" target="_blank" rel="noopener noreferrer" class="cmd-btn">内蔵充電式電池の廃棄について</a>
+      <a href="https://www.audio-technica.co.jp/support/counterfeit/" target="_blank" rel="noopener noreferrer" class="cmd-btn">オーディオテクニカ製品の模倣品に関する注意</a>
+      <a href="https://www.audio-technica.co.jp/product/notice/" target="_blank" rel="noopener noreferrer" class="cmd-btn">製品に関する大切なお知らせ</a>
+    </div>
+  </div>
+</div>
 <div id="page-notfound" class="page">
   <div class="breadcrumb"><a onclick="showPage('support');return false;">ホーム</a> &rsaquo; <span>サポート</span></div>
   <div class="not-found">
@@ -393,8 +440,8 @@
   <div class="page-wrap">
     <h1 class="page-title">片側イヤホン紛失</h1>
     <section class="section">
-      <h2 class="section-title">製品型番を選択してください</h2>
-      <div class="product-grid"><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX7" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-TWX7</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX9" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-TWX9</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX9MK2" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-TWX9MK2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2BWGY" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW2 BW/GY</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2NC" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW2NC</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW_STB" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW STB</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW_SVN" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SQ1TW SVN</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK1TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CK1TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TW2" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWGG" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW2 GG</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWMV" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW2 ML</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWDV" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW2 DV</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWR2" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS50TW2 R2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS5TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS5TW_LTD" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS5TW LTD</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS30TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS30TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS30TWplus" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKS30TW+</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-AC5TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-AC5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SPORT7TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SPORT7TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SPORT5TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-SPORT5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-ANC300TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-ANC300TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKR7TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKR7TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKR70TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CKR70TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CK3TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW_TS" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CK3TW TS</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW_SI" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-CK3TW SI</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-MVL2_IM" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-MVL2 IM</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-MVL2_TS" target="_blank" rel="noopener noreferrer" class="product-cell">ATH-MVL2 TS</a><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div></div>
+      <h2 class="section-title">製品型番を選択してください<br><span style="font-size:12px; font-weight:400; color:#666;">※「ATH-」から始まる文字列をご確認ください</span></h2>
+      <div class="product-grid"><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX7" target="_blank" rel="noopener noreferrer" class="product-cell">TWX7</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX9" target="_blank" rel="noopener noreferrer" class="product-cell">TWX9</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-TWX9MK2" target="_blank" rel="noopener noreferrer" class="product-cell">TWX9MK2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2BWGY" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW2 BW/GY</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW2NC" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW2NC</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW_STB" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW STB</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SQ1TW_SVN" target="_blank" rel="noopener noreferrer" class="product-cell">SQ1TW SVN</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK1TW" target="_blank" rel="noopener noreferrer" class="product-cell">CK1TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TW" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TW2" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWGG" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW2 GG</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWMV" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW2 ML</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWDV" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW2 DV</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS50TWR2" target="_blank" rel="noopener noreferrer" class="product-cell">CKS50TW2 R2</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS5TW" target="_blank" rel="noopener noreferrer" class="product-cell">CKS5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS5TW_LTD" target="_blank" rel="noopener noreferrer" class="product-cell">CKS5TW LTD</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS30TW" target="_blank" rel="noopener noreferrer" class="product-cell">CKS30TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKS30TWplus" target="_blank" rel="noopener noreferrer" class="product-cell">CKS30TW+</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-AC5TW" target="_blank" rel="noopener noreferrer" class="product-cell">AC5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SPORT7TW" target="_blank" rel="noopener noreferrer" class="product-cell">SPORT7TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-SPORT5TW" target="_blank" rel="noopener noreferrer" class="product-cell">SPORT5TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-ANC300TW" target="_blank" rel="noopener noreferrer" class="product-cell">ANC300TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKR7TW" target="_blank" rel="noopener noreferrer" class="product-cell">CKR7TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CKR70TW" target="_blank" rel="noopener noreferrer" class="product-cell">CKR70TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW" target="_blank" rel="noopener noreferrer" class="product-cell">CK3TW</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW_TS" target="_blank" rel="noopener noreferrer" class="product-cell">CK3TW TS</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-CK3TW_SI" target="_blank" rel="noopener noreferrer" class="product-cell">CK3TW SI</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-MVL2_IM" target="_blank" rel="noopener noreferrer" class="product-cell">MVL2 IM</a><a href="https://dev-www.audio-technica.co.jp/support/parts/search/result/ATH-MVL2_TS" target="_blank" rel="noopener noreferrer" class="product-cell">MVL2 TS</a><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div><div class="product-cell product-cell--empty"></div></div>
     </section>
   </div>
 </div>
